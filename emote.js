@@ -19,13 +19,16 @@ function load(){
 }
 
 
-window.onscroll = function(e) {
+window.onscroll = (e) => {
     var d = document.documentElement;
     var viewportHeight = window.innerHeight;
     var elementHeight = d.offsetHeight;
 
     // Current Y position on page + viewportHeight = total element Height
-    if (viewportHeight+e.pageY === elementHeight) {
+
+    this.console.log((window.scrollY), elementHeight);
+
+    if (viewportHeight+window.scrollY === elementHeight) {
       load();
     }
 };
