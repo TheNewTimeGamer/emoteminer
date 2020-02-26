@@ -25,9 +25,6 @@ window.onscroll = (e) => {
     var elementHeight = d.offsetHeight;
 
     // Current Y position on page + viewportHeight = total element Height
-
-    this.console.log((window.scrollY), elementHeight);
-
     if (viewportHeight+window.scrollY === elementHeight) {
       load();
     }
